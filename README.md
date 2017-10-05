@@ -25,10 +25,11 @@ This is an Springboot application - REST microservice.
  - To run the application do: mvn spring-boot:run
  - The app has been set with swagger, to try the app just go to: http://localhost:8080/swagger-ui.html
  	JSON examples can be seen in swagger.
- - Library used is: https://alpha.openaddressesuk.org/addresses.json?postcode=W60LG
+ - Library used is: api.ideal-postcodes.co.uk
  	
  TODOs:	 (Due to not enough time)
  - I also wanted to add some emoticons in the tests :) , I'm using JUnit5 after all.
+ - Do more tests
  
  
  
@@ -37,5 +38,9 @@ This is an Springboot application - REST microservice.
 ################
  
 REQUEST:
+	http://localhost:8080/postcode?postcode=W6%200LG
 	
 RESPONSE:
+	{
+		"address": "5-17 Hammersmith Grove"
+	}
